@@ -1,0 +1,140 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", system-ui, sans-serif;
+  background: #0f172a;
+  color: #e5e7eb;
+}
+
+.bg-gradient {
+  position: fixed;
+  inset: 0;
+  background: radial-gradient(circle at top, #1e3a8a, #020617);
+  z-index: -1;
+}
+
+.app {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+header h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+header p {
+  color: #94a3b8;
+}
+
+/* Input Card */
+.input-card {
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  border-radius: 14px;
+  display: flex;
+  gap: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+input {
+  flex: 1;
+  padding: 14px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-size: 15px;
+}
+
+button {
+  padding: 14px 22px;
+  border-radius: 8px;
+  border: none;
+  background: linear-gradient(135deg, #22c55e, #16a34a);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+/* Result Cards */
+.card {
+  background: rgba(255,255,255,0.06);
+  border-radius: 16px;
+  padding: 20px;
+  margin-top: 30px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+}
+
+/* Risk Meter */
+.risk-meter {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.circle {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 28px;
+  font-weight: bold;
+  color: white;
+}
+
+.safe { background: #16a34a; }
+.warn { background: #ea580c; }
+.danger { background: #dc2626; }
+
+.bar {
+  flex: 1;
+}
+
+.progress {
+  height: 12px;
+  border-radius: 6px;
+  background: #1e293b;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  width: 0%;
+  transition: width 0.8s ease;
+}
+
+/* Sections */
+details {
+  margin-top: 15px;
+  background: rgba(0,0,0,0.25);
+  border-radius: 12px;
+}
+
+summary {
+  padding: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+pre {
+  padding: 14px;
+  margin: 0;
+  white-space: pre-wrap;
+  font-size: 14px;
+  color: #cbd5f5;
+}

@@ -1,0 +1,59 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>AI Code Review Agent</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>🤖 AI Code Review Agent</h1>
+
+  <input
+    id="prUrl"
+    type="text"
+    placeholder="Paste GitHub PR URL here"
+  />
+
+  <button onclick="reviewPR()">Review Pull Requests</button>
+
+  <pre id="output"></pre>
+
+  <script src="script.js"></script>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>AI Code Review Agent</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="bg-gradient"></div>
+
+  <div class="app">
+    <header>
+      <h1>🤖 AI Code Review Agent</h1>
+      <p>Instant risk analysis & merge decision for GitHub Pull Requests</p>
+    </header>
+
+    <div class="input-card">
+      <input
+        id="prUrl"
+        type="text"
+        placeholder="https://github.com/owner/repo/pull/123"
+      />
+      <button onclick="reviewPR()">Analyze PR</button>
+    </div>
+
+    <div id="output"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
