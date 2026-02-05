@@ -56,7 +56,6 @@ Compressed Review Summary
 - CSS
 - Vanilla JavaScript
 
----
 
 
 ---
@@ -70,35 +69,44 @@ GROQ_API_KEY=your_groq_api_key
 GITHUB_TOKEN=your_github_token
 ```
 
-1️⃣ Backend (FastAPI)
+## 1️⃣ Backend (FastAPI)
 The backend manages the connection to GitHub and processes the AI analysis.
 
 1. **Navigate to the backend directory:**
    ```bash
-   cd backend
-Install dependencies:
+   cd backend ``
 
-Bash
+2. **Install dependencies:**
+
+```Bash
 pip install -r requirements.txt
+```
+
+
 Start the FastAPI server:
 
-Bash
-uvicorn main:app --reload
+```Bash
+uvicorn main:app --reload 
+```
 Local API URL: http://127.0.0.1:8000
 
 Interactive API Docs (Swagger): http://127.0.0.1:8000/docs
 
-2️⃣ Frontend (Vanilla JavaScript)
+## 2️⃣ Frontend (Vanilla JavaScript)
 The frontend is a lightweight interface for submitting PRs and viewing results.
 
 Open a new terminal and navigate to the frontend directory:
 
-Bash
+```Bash
 cd frontend
+```
+
 Start a local server:
 
-Bash
+```Bash
 python -m http.server 5500
+```
+
 Access the application: Open http://localhost:5500 in your web browser.
 
 3️⃣ Using the Application
