@@ -110,13 +110,12 @@ Access the application: Open http://localhost:5500 in your web browser.
 
 ## 3️⃣ Using the Application
 
-Open the frontend in your browser using the local server link above.
+- Open the frontend in your browser using the local server link above.
+- Paste a Public GitHub Pull Request URL into the input field.
 
-Paste a Public GitHub Pull Request URL into the input field.
+- Example: https://github.com/octocat/Hello-World/pull/1
 
-Example: https://github.com/octocat/Hello-World/pull/1
-
-Click "Review Pull Request".
+Click **"Review Pull Request".**
 
 ## 📊 Review Results
 
@@ -125,26 +124,24 @@ Once the analysis is complete, the application will display:
 **📝 AI-Generated Review Summary**
 
 A clear breakdown of:
-  -What files changed
-  -Key code modifications
-  -Overall intent of the PR
+  - What files changed
+  - Key code modifications
+  - Overall intent of the PR
 
 -----
 
 **⚠️ Risk Score**
 
--An assessment of the PR’s:
-  -Complexity
-  -Potential impact
-  -Risk level (low → high)
+- An assessment of the PR’s:
+  - Complexity
+  - Potential impact
+  - Risk level (low → high)
 
 -----
 
 **✅ Merge Recommendation**
 
--A data-driven suggestion on whether the PR should be:
- -Merged ✅
- -Reviewed further 🔍
-  Rejected ❌
-
-R
+- A data-driven suggestion on whether the PR should be:
+ - Merged ✅
+ - Reviewed further 🔍
+ - Rejected ❌
