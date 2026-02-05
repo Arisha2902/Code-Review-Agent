@@ -70,11 +70,11 @@ GITHUB_TOKEN=your_github_token
 ```
 
 ## 1️⃣ Backend (FastAPI)
-The backend manages the connection to GitHub and processes the AI analysis.
+
 
 1. **Navigate to the backend directory:**
    ```bash
-   cd backend ``
+   cd backend 
 
 2. **Install dependencies:**
 
@@ -93,7 +93,6 @@ Local API URL: http://127.0.0.1:8000
 Interactive API Docs (Swagger): http://127.0.0.1:8000/docs
 
 ## 2️⃣ Frontend (Vanilla JavaScript)
-The frontend is a lightweight interface for submitting PRs and viewing results.
 
 Open a new terminal and navigate to the frontend directory:
 
@@ -109,7 +108,8 @@ python -m http.server 5500
 
 Access the application: Open http://localhost:5500 in your web browser.
 
-3️⃣ Using the Application
+## 3️⃣ Using the Application
+
 Open the frontend in your browser using the local server link above.
 
 Paste a Public GitHub Pull Request URL into the input field.
@@ -118,10 +118,33 @@ Example: https://github.com/octocat/Hello-World/pull/1
 
 Click "Review Pull Request".
 
-Review results: The application will display:
+## 📊 Review Results
 
-AI-generated review summary: A breakdown of what changed.
+Once the analysis is complete, the application will display:
 
-Risk score: An assessment of the PR's complexity or danger.
+**📝 AI-Generated Review Summary**
 
-Merge recommendation: A data-driven suggestion on whether to merge.
+A clear breakdown of:
+  -What files changed
+  -Key code modifications
+  -Overall intent of the PR
+
+-----
+
+**⚠️ Risk Score**
+
+-An assessment of the PR’s:
+  -Complexity
+  -Potential impact
+  -Risk level (low → high)
+
+-----
+
+**✅ Merge Recommendation**
+
+-A data-driven suggestion on whether the PR should be:
+ -Merged ✅
+ -Reviewed further 🔍
+  Rejected ❌
+
+R
