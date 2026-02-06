@@ -75,13 +75,13 @@ GITHUB_TOKEN=your_github_token
 1. **Navigate to the backend directory:**
    ```bash
    cd backend 
+   ```
 
 2. **Install dependencies:**
 
 ```Bash
 pip install -r requirements.txt
 ```
-
 
 Start the FastAPI server:
 
