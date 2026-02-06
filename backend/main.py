@@ -40,7 +40,7 @@ app.add_middleware(
         "http://localhost:5500", 
         # "*"
     ],
-    allow_credentials=True,
+    allow_credentials=False,
     allow_methods=["*"],
     allow_headers=["*"],
 )
@@ -48,6 +48,10 @@ app.add_middleware(
 
 class PRRequest(BaseModel):
     pr_url: str
+
+@app.options("/{path:path}")
+def options_handler(path: str):
+    return {}
 
 
 @app.post("/review-pr")
