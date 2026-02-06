@@ -19,12 +19,24 @@ app = FastAPI(
     version="1.0"
 )
 
+# app.add_middleware(
+#     CORSMiddleware,
+#     allow_origins=["*"],   # allow all origins (OK for dev & hackathon)
+#     allow_credentials=True,
+#     allow_methods=["*"],   # allow POST, GET, OPTIONS, etc.
+#     allow_headers=["*"],   # allow all headers
+# )
+
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],   # allow all origins (OK for dev & hackathon)
+    allow_origins=[
+        "http://localhost:5500",
+        "http://127.0.0.1:5500",
+    ],
     allow_credentials=True,
-    allow_methods=["*"],   # allow POST, GET, OPTIONS, etc.
-    allow_headers=["*"],   # allow all headers
+    allow_methods=["*"],
+    allow_headers=["*"],
 )
 
 
