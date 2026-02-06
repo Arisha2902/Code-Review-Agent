@@ -3,3 +3,4 @@ uvicorn
 requests
 groq
 python-dotenv
+PyGithub
