@@ -14,7 +14,7 @@ from agents.summary_agent import summarize_review
 load_dotenv()
 
 app = FastAPI(
-    title="AI Code Review Agent",
+    title="Code Review Agent",
     description="ScaleDown-powered AI agent for GitHub Pull Request reviews",
     version="1.0"
 )
