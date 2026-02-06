@@ -94,7 +94,7 @@ async function reviewPR() {
   `;
 
   try {
-    const response = await fetch("http://127.0.0.1:8000/review-pr", {
+    const response = await fetch("https://code-review-agent-1.onrender.com/review-pr", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ pr_url: prUrl })
